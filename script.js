@@ -1,7 +1,7 @@
-let searchbar = document.getElementById("searchbar");
-searchbar.addEventListener("click", () => {
-    searchbar.style.border = "none";
-})
+// let searchbar = document.getElementById("searchbar");
+// searchbar.addEventListener("click", () => {
+//     searchbar.style.border = "none";
+// })
 
 let imageUrl = [
     "https://rukminim1.flixcart.com/fk-p-flap/480/80/image/88a387d43cef39e5.png?q=20",
