@@ -153,6 +153,7 @@ nav span {
 }
 .imageslider img {
     transition: opacity 0.5s ease;
+    object-fit: cover;
 }
 .position {
     position: absolute;
@@ -173,6 +174,52 @@ nav span {
 .positionbtn2 { 
     right: 0;
     border-radius:5px 0px 0px 5px;
+ }
+ .axisdict img{
+    margin-top: 10px;
+    width: 100%;
+    object-fit: cover;
+ }
+ .bedeonSP{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    font-weight: 500;
+    font-size: 22px;
+    width: 82%;
+ }
+ .mobildiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 25px 5px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    /* position: relative; */
+
+ }
+ .mobildiv div{
+    height: 300px;
+    border: 1px solid rgb(217, 212, 212);
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .mobildiv div img{
+    /* height: 186px;
+    width: 90px; */
+    object-fit: contain;
+ }
+ .ad{
+    position: relative;
+    top: -430px;
+    right: 0px;
+    float: right;
+    background-color: white;
+    margin: 23px 10px;
+   
  }
 @media screen and (max-width:767px) {
     .search {
@@ -202,9 +249,18 @@ nav span {
     }
     .imageslider img{
         height: 100px;
-        object-fit: cover;
+       
     }
     main {
         margin: 40px 0px;
+    }
+    .mobildiv{
+        grid-template-columns: 1fr;
+    }
+    .ad{
+        display: none;
+    }
+    .bedeonSP{
+        width: 100%;
     }
 }
