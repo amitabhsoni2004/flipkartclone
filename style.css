@@ -33,7 +33,7 @@ nav {
     align-items: center;
     gap: 20px;
     width: 100%;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     text-wrap: wrap;
 }
 
@@ -88,7 +88,7 @@ nav span {
     text-align: center;
     padding-left: 10px;
     border-radius: 5px;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .shorticon {
@@ -113,7 +113,6 @@ nav span {
     align-items: center;
     text-align: center;
     width: fit-content;
-    
 }
 
 .imgname {
@@ -177,11 +176,17 @@ nav span {
  }
 @media screen and (max-width:767px) {
     .search {
-        display: none;
+        position: absolute;
+        top: 70px;
+        border-radius: 10px;
+        /* background-color: red; */
+        /* left: 10px; */
+        /* margin: 10px 20px; */
     }
-
-    .shorticon {
-        
+    input{
+        font-size: 15px;
+    }
+    .shorticon { 
         padding: 10px 100px;
     }
 
@@ -197,5 +202,9 @@ nav span {
     }
     .imageslider img{
         height: 100px;
+        object-fit: cover;
+    }
+    main {
+        margin: 40px 0px;
     }
 }
