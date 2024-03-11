@@ -382,4 +382,7 @@ body::-webkit-scrollbar{
     #bigsale::-webkit-scrollbar{
         display: none;
     }
+    .login{
+        margin-top: 2px; 
+    }
 }
