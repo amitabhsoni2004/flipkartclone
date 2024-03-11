@@ -14,7 +14,12 @@
 
 <body>
     <header>
+      
         <nav>
+            
+            <span class="uls downnone">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" id="hamburger"   ><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" ></path></svg>
+            </span>
             <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
                 alt="flipkartlogo" style="height: 50px;"> <!-- Adjusted height -->
             <div class="uls search">
@@ -23,20 +28,26 @@
                         d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
                     </path>
                 </svg>
-                <input type="text" name="searchbar" id="searchbar" placeholder="Search for Products, Brands and More"
+                <div class="searchbox">
+                    <input type="text" name="searchbar" id="searchbar" placeholder="Search for Products, Brands and More"
                     aria-label="Search" autocomplete>
+                </div>
             </div>
             <ul>
+                <span class="uls downnone ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="svgs"><path d="M7 4V20H17V12H19V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2H13V4H7ZM19 6H22L18 10L14 6H17V2H19V6ZM13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17C12.5523 17 13 17.4477 13 18Z"></path></svg>
+                </span>
                 <span class="uls">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                        fill="currentColor">
+                        fill="currentColor" class="svgs">
                         <path
                             d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM12.1597 16C10.1243 16 8.29182 16.8687 7.01276 18.2556C8.38039 19.3474 10.114 20 12 20C13.9695 20 15.7727 19.2883 17.1666 18.1081C15.8956 16.8074 14.1219 16 12.1597 16ZM12 4C7.58172 4 4 7.58172 4 12C4 13.8106 4.6015 15.4807 5.61557 16.8214C7.25639 15.0841 9.58144 14 12.1597 14C14.6441 14 16.8933 15.0066 18.5218 16.6342C19.4526 15.3267 20 13.7273 20 12C20 7.58172 16.4183 4 12 4ZM12 5C14.2091 5 16 6.79086 16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5ZM12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7Z">
                         </path>
                     </svg>
-                    <li>Login</li>
+                    <li class="login">Login</li>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                        fill="currentColor">
+                        fill="currentColor" class="svgs none rottop">
                         <path
                             d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
                         </path>
@@ -44,14 +55,14 @@
                 </span>
                 <span class="uls">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                        fill="currentColor">
+                        fill="currentColor" class="svgs">
                         <path
                             d="M4.00436 6.41686L0.761719 3.17422L2.17593 1.76001L5.41857 5.00265H20.6603C21.2126 5.00265 21.6603 5.45037 21.6603 6.00265C21.6603 6.09997 21.6461 6.19678 21.6182 6.29L19.2182 14.29C19.0913 14.713 18.7019 15.0027 18.2603 15.0027H6.00436V17.0027H17.0044V19.0027H5.00436C4.45207 19.0027 4.00436 18.5549 4.00436 18.0027V6.41686ZM6.00436 7.00265V13.0027H17.5163L19.3163 7.00265H6.00436ZM5.50436 23.0027C4.67593 23.0027 4.00436 22.3311 4.00436 21.5027C4.00436 20.6742 4.67593 20.0027 5.50436 20.0027C6.33279 20.0027 7.00436 20.6742 7.00436 21.5027C7.00436 22.3311 6.33279 23.0027 5.50436 23.0027ZM17.5044 23.0027C16.6759 23.0027 16.0044 22.3311 16.0044 21.5027C16.0044 20.6742 16.6759 20.0027 17.5044 20.0027C18.3328 20.0027 19.0044 20.6742 19.0044 21.5027C19.0044 22.3311 18.3328 23.0027 17.5044 23.0027Z">
                         </path>
                     </svg>
-                    <li>Cart</li>
+                    <li class="none">Cart</li>
                 </span>
-                <span class="uls">
+                <span class="uls none">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                         fill="currentColor">
                         <path
@@ -61,7 +72,7 @@
                     <li>Become a seller</li>
                 </span>
             </ul>
-            <button aria-label="Open menu" style="background: none; border: none; cursor: pointer;">
+            <button aria-label="Open menu" style="background: none; border: none; cursor: pointer;" class="none">
                 <!-- Wrapped SVG in a button for accessibility -->
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                     <path
@@ -260,6 +271,23 @@
         <div class="ad">
      <img src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/94c6e3503b8d87da.png?q=20" alt=""
         style="height: 410px; width: 250px;">
+        </div>
+
+        <div id="bigsale">
+            <div>
+                <div>
+
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/8f93c8d6e486e2a3.jpg?q=20" alt="">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/b5cf664dece6236c.jpg?q=20" alt="">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/5ea4be287cc0c19c.jpg?q=20" alt="">
+                </div>
+                <div>
+
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/f499fc8607c6fef2.jpg?q=20" alt="">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/cb76b063540f90fc.jpg?q=20" alt="">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/520/280/image/ec6cf773ae886bd7.jpg?q=20" alt="">
+                </div>
+            </div>
         </div>
     </main>
 

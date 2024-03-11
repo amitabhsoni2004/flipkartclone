@@ -14,12 +14,36 @@ let imageUrl = [
 let imgTag = document.getElementById('img');
 let x = 0; // Current image index
 
+setInterval(() => {
+    x = (x + 1) % imageUrl.length; // Increment x, loop back to 0 if at the end
+    imgTag.setAttribute('src', imageUrl[x]);
+}, 2000);
+x=0;
 function next() {
     x = (x + 1) % imageUrl.length; // Increment x, loop back to 0 if at the end
     imgTag.setAttribute('src', imageUrl[x]);
-}
 
+    clearInterval();
+}
 function prev() {
     x = (x - 1 + imageUrl.length) % imageUrl.length; // Decrement x, loop to the last if at the beginning
     imgTag.setAttribute('src', imageUrl[x]);
 }
+
+
+const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+function updateLoginText() {
+    let loginElement = document.querySelector(".login");
+    if (isMobile) {
+        loginElement.textContent = "You";
+    } else {
+        loginElement.textContent = "Login";
+    }
+}
+
+updateLoginText();
+window.addEventListener('resize', () => {
+    isMobile = window.matchMedia('(max-width: 767px)').matches;
+    updateLoginText();
+});

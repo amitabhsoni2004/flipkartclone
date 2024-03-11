@@ -62,6 +62,11 @@ nav ul {
     outline: none;
 }
 
+.searchbox {
+    position: relative;
+    width: 100%;
+}
+
 nav button {
     margin: 40px;
 }
@@ -83,12 +88,13 @@ nav span {
 .search {
     background-color: #f0f5ff;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     padding-left: 10px;
     border-radius: 5px;
-    width: 100%;
+    width: 100vw;
+
 }
 
 .shorticon {
@@ -102,9 +108,11 @@ nav span {
     height: 100%;
     overflow-x: scroll;
 }
+
 .shorticon::-webkit-scrollbar {
     display: none;
-  }
+}
+
 .shortimg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -131,7 +139,7 @@ nav span {
 }
 
 .mtop {
-    position:absolute;
+    position: absolute;
     padding-top: 0px;
     transition: transform 0.2s linear;
 }
@@ -140,21 +148,31 @@ nav span {
     transform: rotate(-180deg);
 }
 
+.rottop {
+    transition: transform 0.2s linear;
+}
+
+.rottop:hover {
+    transform: rotate(-180deg);
+}
 
 .disinline {
     display: inline-block;
     font-weight: 500;
 }
+
 .imageslider {
     position: relative;
     width: 100%;
     margin: auto;
     margin-top: 20px;
 }
+
 .imageslider img {
     transition: opacity 0.5s ease;
     object-fit: cover;
 }
+
 .position {
     position: absolute;
     top: 50%;
@@ -163,32 +181,37 @@ nav span {
     border: none;
     padding: 30px 7px;
     cursor: pointer;
-  
+
     color: gray;
-  
+
 }
-.positionbtn1 { 
+
+.positionbtn1 {
     left: 0;
-    border-radius:0px 5px 5px 0px;
- }
-.positionbtn2 { 
+    border-radius: 0px 5px 5px 0px;
+}
+
+.positionbtn2 {
     right: 0;
-    border-radius:5px 0px 0px 5px;
- }
- .axisdict img{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.axisdict img {
     margin-top: 10px;
     width: 100%;
     object-fit: cover;
- }
- .bedeonSP{
+}
+
+.bedeonSP {
     margin-top: 10px;
     padding: 10px;
     background-color: white;
     font-weight: 500;
     font-size: 22px;
     width: 82%;
- }
- .mobildiv{
+}
+
+.mobildiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
@@ -197,8 +220,9 @@ nav span {
     scrollbar-width: none;
     /* position: relative; */
 
- }
- .mobildiv div{
+}
+
+.mobildiv div {
     height: 300px;
     border: 1px solid rgb(217, 212, 212);
     display: flex;
@@ -206,22 +230,57 @@ nav span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
- .mobildiv div img{
+}
+
+.mobildiv div img {
     /* height: 186px;
     width: 90px; */
     object-fit: contain;
- }
- .ad{
+}
+
+.ad {
     position: relative;
     top: -430px;
     right: 0px;
     float: right;
     background-color: white;
     margin: 23px 10px;
-   
- }
+
+}
+
+.downnone {
+    display: none;
+}
+
+#bigsale {
+    margin-top: 20px;
+    background-color: white;
+}
+
+#bigsale div {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    /* display: block; */
+
+}
+
+#bigsale div img {
+    width: 476px;
+}
+#bigsale{
+    width: 100%;
+    overflow-x: scroll;
+}
+#bigsale::-webkit-scrollbar{
+    display: none;
+}
 @media screen and (max-width:767px) {
+    * {
+        /* font-size: 15px; */
+    }
+
     .search {
         position: absolute;
         top: 70px;
@@ -229,38 +288,98 @@ nav span {
         /* background-color: red; */
         /* left: 10px; */
         /* margin: 10px 20px; */
-    }
-    input{
-        font-size: 15px;
-    }
-    .shorticon { 
-        padding: 10px 100px;
+        /* gap: 4px; */
     }
 
-    .shortimg {
-        
+    input {
+        font-size: 15px;
     }
+
+    .shorticon {
+        padding: 10px 30px;
+    }
+
+    .shortimg {}
 
     .imgname {
         text-wrap: wrap;
     }
-    .position{
-        padding:10px 2px;
+
+    .position {
+        padding: 10px 2px;
     }
-    .imageslider img{
+
+    .imageslider img {
         height: 100px;
-       
+
     }
+
     main {
         margin: 40px 0px;
     }
-    .mobildiv{
-        grid-template-columns: 1fr;
+
+    .mobildiv {
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: 1fr;
     }
-    .ad{
+
+    .ad {
         display: none;
     }
-    .bedeonSP{
+
+    .bedeonSP {
+        width: 100%;
+    }
+
+    .searchbox {}
+
+    .none {
+        display: none;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+
+    .uls {
+        gap: 4px;
+    }
+
+    .svgs {
+        height: 20px !important;
+        width: 20px !important;
+        margin-top: 4px;
+    }
+
+    nav img {
+        position: relative;
+        left: -40px;
+    }
+
+    nav {
+        gap: 0px;
+        width: 60%;
+        /* width: 0%; */
+    }
+
+    .downnone {
+        display: flex;
+    }
+
+    #hamburger {
+        margin-left: 15px;
+    }
+
+    #bigsale div {
+
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: 1fr;
+        padding: 5px;
+    }
+    #bigsale div img {
+        width: 350px;
+    }
+    #bigsale{
         width: 100%;
     }
 }
