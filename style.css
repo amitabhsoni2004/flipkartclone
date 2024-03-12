@@ -252,27 +252,92 @@ nav span {
     display: none;
 }
 
-#bigsale {
+#bigsale{
+    width: 100%;
     margin-top: 20px;
     background-color: white;
-    position: absolute;
-    top:1015px;
-    overflow-x: hidden;
+    padding: 15px;
+    /* overflow: hidden; */
 }
-body::-webkit-scrollbar{
-    display: none;
-}
-#bigsale div {
-    padding: 10px;
+.bigsaleimg{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
     gap: 10px;
 }
-
-#bigsale div img {
+.bigsaleimg img{
     width: 476px;
 }
-
+.featbrand{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    background-color: white;
+    margin-top: 20px;
+}
+.featbrand1{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 15px;
+    margin: 14px;
+}
+.featbrand1::-webkit-scrollbar{
+    display: none;
+}
+.featbrand2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    overflow: scroll;
+}
+.featbrand2 img{
+    width: 486px;
+}
+.featbrand2::-webkit-scrollbar{
+    display: none;
+}
+.feattext{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 18px 0px 0px 18px;
+}
+.smartgd{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gdlist{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   padding: 15px;
+   gap: 10px;
+   text-wrap: nowrap;
+   overflow-x: scroll;
+}
+.gdlist::-webkit-scrollbar{
+    display: none;
+}
+.gdlist div{
+    height: 250px;
+    width: 100%;
+    border: 1px solid rgb(224, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.gdlist img{
+    width:120px; 
+    height:200px;
+    object-fit: contain;
+}
 @media screen and (max-width:767px) {
     * {
         /* font-size: 15px; */
@@ -363,26 +428,35 @@ body::-webkit-scrollbar{
         margin-left: 15px;
     }
 
-    #bigsale div {
-
-        /* grid-template-columns: 1fr; */
-        grid-template-rows: 1fr;
-        padding: 5px;
+    .login{
+        margin-top: 4px; 
     }
-    #bigsale div img {
-        width: 350px;
-    }
-    #bigsale{
-        /* width: 100%; */
-        position: static;
+    .bigsaleimg{
+        /* display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr; */
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
         width: 100%;
         overflow-x: scroll;
     }
-   
-    #bigsale::-webkit-scrollbar{
-        display: none;
+    .bigsaleimg img{
+        width: 350px;
     }
-    .login{
-        margin-top: 4px; 
+    .featbrand2 img{
+        width: 350px;
+    }
+    .featbrand1 img{
+        width: 350px;
+    }
+    .imgwidth{
+        width: 350px;
+    }
+    .featbrand1{
+        margin: 8px;
+    }
+    .feattext{
+        margin-left: 10px;
     }
 }
