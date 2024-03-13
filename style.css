@@ -265,7 +265,7 @@ nav span {
     gap: 10px;
 }
 .bigsaleimg img{
-    width: 602px;
+    width: 486px;
 }
 .featbrand{
     display: flex;
@@ -292,7 +292,7 @@ nav span {
     overflow: scroll;
 }
 .featbrand2 img{
-    width: 606px;
+    width: 486px;
 }
 .featbrand2::-webkit-scrollbar{
     display: none;
@@ -383,7 +383,7 @@ aside{
     margin-top: 20px;
 }
 .flipkartad img{
-    width: 101%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
