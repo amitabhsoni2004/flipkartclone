@@ -208,7 +208,7 @@ nav span {
     background-color: white;
     font-weight: 500;
     font-size: 22px;
-    width: 82%;
+    width: 85%;
 }
 
 .mobildiv {
@@ -245,7 +245,6 @@ nav span {
     float: right;
     background-color: white;
     margin: 23px 10px;
-
 }
 
 .downnone {
@@ -266,7 +265,7 @@ nav span {
     gap: 10px;
 }
 .bigsaleimg img{
-    width: 476px;
+    width: 602px;
 }
 .featbrand{
     display: flex;
@@ -293,7 +292,7 @@ nav span {
     overflow: scroll;
 }
 .featbrand2 img{
-    width: 486px;
+    width: 606px;
 }
 .featbrand2::-webkit-scrollbar{
     display: none;
@@ -337,6 +336,56 @@ nav span {
     width:120px; 
     height:200px;
     object-fit: contain;
+}
+.scale:hover{
+    transform: scale(1.1);
+}
+aside{
+    background-color: white;
+    padding: 20px;
+    width:580px;
+}
+.asidesec{
+    display: grid;
+    width: 100%;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+   margin-top: 20px;
+}
+.asidesec div{
+    border: 1px solid rgb(178, 176, 176);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: flex-start;
+
+}
+.timg{
+    object-fit: contain;
+    width: 240px;
+}
+.timg:hover{
+    transform: scale(1.02);
+}
+.clrgreen{
+    color: green;
+}
+.ttext{
+    font-weight: 500;
+    font-size: 22px;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.flipkartad img{
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
 }
 @media screen and (max-width:767px) {
     * {
@@ -459,4 +508,22 @@ nav span {
     .feattext{
         margin-left: 10px;
     }
+    .flipkartad{
+        display: none;
+    }
+    .asidesec{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        overflow-x: scroll;
+    }
+    .asidesec::-webkit-scrollbar{
+        /* display: none; */
+    }
+    aside{
+        width: 375px;
+    }
+
+.timg{
+    width: 200px;
+}
 }
