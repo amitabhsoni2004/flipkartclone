@@ -263,6 +263,9 @@ nav span {
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 1fr; */
     gap: 10px;
+    /* width:fit-content; */
+    overflow-x: scroll;
+    scrollbar-width: 0px;
 }
 .bigsaleimg img{
     width: 476px;
