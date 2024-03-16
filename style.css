@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+*::-webkit-scrollbar{
+    display: none;
+}
 body {
     background-color: #f1f2f4;
 }
@@ -208,7 +210,7 @@ nav span {
     background-color: white;
     font-weight: 500;
     font-size: 22px;
-    width: 85%;
+    width: 81%;
 }
 
 .mobildiv {
@@ -253,6 +255,7 @@ nav span {
 
 #bigsale{
     width: 100%;
+    height: 550px;
     margin-top: 20px;
     background-color: white;
     padding: 15px;
@@ -263,13 +266,19 @@ nav span {
     grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-rows: 1fr; */
     gap: 10px;
-    /* width:fit-content; */
+    width:100%;
+    position: relative;
+    height: 100%;
+    top: -427px;
     overflow-x: scroll;
     scrollbar-width: 0px;
 }
 .bigsaleimg img{
     width: 476px;
 }
+/* .bigsaleimg::-webkit-scrollbar{
+    display: none;
+} */
 .featbrand{
     display: flex;
     flex-direction: column;
@@ -390,6 +399,25 @@ aside{
     height: 100%;
     object-fit: cover;
 }
+#bigsale1{
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    /* overflow: hidden; */
+}
+.bigsaleimg1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    gap: 10px;
+    /* width:fit-content; */
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+}
+.bigsaleimg1 img{
+    width: 476px;
+}
 @media screen and (max-width:767px) {
     * {
         /* font-size: 15px; */
@@ -483,7 +511,7 @@ aside{
     .login{
         margin-top: 4px; 
     }
-    .bigsaleimg{
+    .bigsaleimg,   .bigsaleimg1{
         /* display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr; */
@@ -492,9 +520,15 @@ aside{
         flex-direction: row;
         width: 100%;
         overflow-x: scroll;
+        position: static;
     }
-    .bigsaleimg img{
-        width: 350px;
+    .bigsaleimg img,.bigsaleimg1 img{
+        width: 330px;
+        height: 100%;
+        /* object-fit: cover; */
+    }
+    #bigsale{
+        height: 210px;
     }
     .featbrand2 img{
         width: 350px;
@@ -523,7 +557,7 @@ aside{
         /* display: none; */
     }
     aside{
-        width: 375px;
+        width:100%;
     }
 
 .timg{
