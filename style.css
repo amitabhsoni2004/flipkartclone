@@ -612,4 +612,7 @@ aside{
 .dyasec aside{
     width: 374px;
 }
+.div2{
+    display: none;
+}
 }
