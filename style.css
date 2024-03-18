@@ -418,6 +418,43 @@ aside{
 .bigsaleimg1 img{
     width: 476px;
 }
+.dyasec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+    height:100%;
+    width: 100%;
+    margin-top: 20px;
+    /* background-color: white; */
+}
+.dyasec aside{
+    width: 492px;
+}
+.div{
+    border: 1px solid rgb(190, 183, 183);
+    background-color: white;
+}
+.div img{
+    width: 120px;
+    /* transform:scaleX(1.2); */
+}
+.div div{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* text-wrap: nowrap; */
+    
+}
+.threediv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.threediv div,span{
+
+    /* border: 2px solid black; */
+}
 @media screen and (max-width:767px) {
     * {
         /* font-size: 15px; */
@@ -562,5 +599,17 @@ aside{
 
 .timg{
     width: 200px;
+}
+.dyasec {
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    width: fit-content;
+}
+.asidesec{
+    /* max-width: 100px; */
+    overflow-x: scroll;
+}
+.dyasec aside{
+    width: 374px;
 }
 }

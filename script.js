@@ -8,7 +8,8 @@ let imageUrl = [
     "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/66e1949c1f88b21c.jpg?q=20",
     "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/6d92c18feb12b119.jpg?q=20",
     "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/c096498cafe9027c.png?q=20",
-    "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d05c680ac784bef4.png?q=20","https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/e4bf2a96a311355e.jpg?q=20"
+    "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/d05c680ac784bef4.png?q=20","https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/e4bf2a96a311355e.jpg?q=20",
+    "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/8403a0f8d48613a5.png?q=20"
 ];
 
 let imgTag = document.getElementById('img');
